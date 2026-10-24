@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/fav.png" type="image/png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
     <title>Lani & Dani - Home page</title>
 </head>
 
 <body>
     <!-- 1. Header & Banner -->
-    <header>
-        <div class="container">
+    <header class="hero-section">
+        <div class="top-header">
             <div class="logo-box">
                 <a href="index.html"><img src="images/logo.png" alt="logo"></a>
             </div>
@@ -32,51 +36,82 @@
                 </nav>
             </div>
         </div>
-    </header>
 
-    <section class="slider">
-        <img src="images/slider-1.jpg" alt="">
-    </section>
+        <div class="slider">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/slider-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slider-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slider-3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </header>
 
     <!-- 2. Main Content -->
     <main>
         <!-- Introduction -->
         <section class="introduction">
             <div class="container">
-                <div class="description">
-                    <p class="subtitle">Chúng tôi là ai?</p>
-                    <h1>Công ty LANI & DANI</h1>
-                    <p> <b>Tự hào là công ty đầu tiên tại Việt Nam Cung cấp dịch vụ trọn gói</b>
-                        trong lĩnh vực tư vấn, thiết kế, xây dựng sân Golf, cung ứng nguồn lực, dịch vụ huấn luyện,
-                        quản lý
-                        và
-                        hậu cần cho dịch vụ Golf.</p>
-                    <p>Chúng tôi còn hoạt động trong lĩnh vực xây lắp và đầu tư xây dựng các công trình dân dụng,
-                        nhà
-                        xưởng công
-                        nghiệp, công trình hạ tầng kỹ thuật, đường giao thông, cầu cảng, bờ kè,cầu cống, nạo vét
-                        sông
-                        rạch,
-                        xây
-                        dựng các công trình thủy lợi, thi công san lấp mặt bằng, sản xuất và kinh doanh vật liệu xây
-                        dựng
-                    </p>
-                </div>
-                <div class="intro-images">
-                    <img src="images/introduction-girl.jpg" alt="">
-                    <img src="images/introduction-man.jpg" alt="">
+                <div class="row">
+                    <div class="description col">
+                        <p class="subtitle">Chúng tôi là ai?</p>
+                        <h1>Công ty LANI & DANI</h1>
+                        <p> <b>Tự hào là công ty đầu tiên tại Việt Nam Cung cấp dịch vụ trọn gói</b>
+                            trong lĩnh vực tư vấn, thiết kế, xây dựng sân Golf, cung ứng nguồn lực, dịch vụ huấn luyện,
+                            quản lý
+                            và
+                            hậu cần cho dịch vụ Golf.</p>
+                        <p>Chúng tôi còn hoạt động trong lĩnh vực xây lắp và đầu tư xây dựng các công trình dân dụng,
+                            nhà
+                            xưởng công
+                            nghiệp, công trình hạ tầng kỹ thuật, đường giao thông, cầu cảng, bờ kè,cầu cống, nạo vét
+                            sông
+                            rạch,
+                            xây
+                            dựng các công trình thủy lợi, thi công san lấp mặt bằng, sản xuất và kinh doanh vật liệu xây
+                            dựng
+                        </p>
+                    </div>
+                    <div class="intro-images col">
+                        <div class="row">
+                            <div class="item-1 col-6">
+                                <img src="images/introduction-girl.jpg" alt="">
+                            </div>
+                            <div class="item-2 col-6">
+                                <img src="images/introduction-man.jpg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Service -->
-
-        <section class="golf-services">
+        <section class="golf-service">
             <div class="container">
                 <!-- Section Header -->
                 <div class="section-header">
                     <span>Chuyên gia hàng đầu</span>
                     <h2>Dịch Vụ Sân Golf</h2>
+                    <div class="divider"></div>
                     <p>Với đội ngũ thiết kế và xây dựng chuyên nghiệp. <b>Lani &
                             Dani
                         </b>đảm
@@ -90,42 +125,42 @@
 
                 <!-- Section Card -->
                 <div class="row">
-                    <div class="service-card">
+                    <div class="service-card col-4">
                         <article>
                             <img src="images/service-design.jpg" alt="Thiết kế sân golf sang trọng">
                             <h3>Thiết kế</h3>
                             <p>Đội ngũ thiết kế sân golf hơn 10 năm kinh nghiệm, thi công đạt tiêu chuẩn quốc tế</p>
                         </article>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card col-4">
                         <article>
                             <img src="images/service-construction.jpg" alt="Xây dựng cơ sở hạ tầng sân golf">
                             <h3>Xây dựng</h3>
                             <p>Là đơn vị đứng đầu về Thiết kế Thi công sân Golf chuyên nghiệp trên Toàn Quốc.</p>
                         </article>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card col-4">
                         <article>
                             <img src="images/service-operation.jpg" alt="Vận hành sân golf chuyên nghiệp">
                             <h3>Vận Hành</h3>
                             <p>Quản lý, điều hành, vận hành hoạt động kinh doanh hằng ngày của sân golf.</p>
                         </article>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card col-4">
                         <article>
                             <img src="images/service-maintenance.jpg" alt="Duy trì và bảo dưỡng sân golf kỹ thuật cao">
                             <h3>Chăm Sóc Bảo Dưỡng</h3>
                             <p>Giúp quá trình sử dụng sân golf luôn đạt tiêu chuẩn kỹ thuật cao nhất.</p>
                         </article>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card col-4">
                         <article>
                             <img src="images/service-training.jpg" alt="Huấn luyện golf bởi chuyên gia quốc tế">
                             <h3>Huấn Luyện</h3>
                             <p>Cung cấp bài học golf từ các chuyên gia quốc tế có trình độ cao, giàu kinh nghiệm.</p>
                         </article>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card col-4">
                         <article>
                             <img src="images/service-lawn-care.jpg" alt="Chăm sóc sân golf bằng kỹ thuật khoa học">
                             <h3>Chăm Sóc Cỏ</h3>
@@ -136,15 +171,14 @@
             </div>
         </section>
 
-
         <!-- Other Service -->
-
         <section class="other-service">
             <div class="container">
                 <!-- Section Header -->
                 <div class="section-header">
                     <span>Uy tín và Chuyên nghiệp</span>
                     <h2>Các Dịch Vụ Khác</h2>
+                    <div class="divider"></div>
                     <p>Với định hướng phát triển đa ngành nghề, ngoài lĩnh vực sân Golf, Công ty TNHH TNHH
                         LANI&DANI còn
                         tập
@@ -153,52 +187,52 @@
 
                 <!-- Section Cards -->
                 <div class="row">
-                    <div class="service-card">
+                    <div class="service-card col-3">
                         <article>
                             <img src="images/house.png" alt="Xây dựng nhà ở tại Lani & Dani">
                             <h3>Xây dựng nhà ở</h3>
                         </article>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card col-3">
                         <article>
                             <img src="images/scaffolding.png" alt="Xây dựng công trình kỹ thuật dân dụng">
                             <h3>Xây dựng các công trình kỹ thuật dân dụng</h3>
                         </article>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card col-3">
                         <article>
                             <img src="images/drill.png" alt="Phá dỡ">
                             <h3>Phá dỡ</h3>
                         </article>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card col-3">
                         <article>
                             <img src="images/blueprint.png"
                                 alt="Lắp đặt hệ thống điện, cấp thoát nước, sưởi và điều hòa không khí">
                             <h3>Lắp đặt hệ thống điện, cấp thoát nước, sưởi và điều hòa không khí</h3>
                         </article>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card col-3">
                         <article>
                             <img src="images/conversation.png" alt="Thiết kế và tư vấn kỹ thuật">
                             <h3>Hoạt động thiết kế chuyên dụng và tư vấn kỹ thuật liên quan</h3>
                         </article>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card col-3">
                         <article>
                             <img src="images/agreement.png"
                                 alt="tư vấn môi giới, đấu giá bất động sản, đấu giá quyền sử dụng đất">
                             <h3>Tư vấn môi giới, đấu giá bất động sản, đấu giá quyền sử dụng đất</h3>
                         </article>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card col-3">
                         <article>
                             <img src="images/location-pin.png" alt="Chăm sóc và duy trì cảnh quan">
                             <h3>Dịch vụ chăm sóc và duy trì cảnh quan</h3>
                         </article>
                     </div>
 
-                    <div class="service-card">
+                    <div class="service-card col-3">
                         <article>
                             <img src="images/demolition.png" alt="Bán buôn máy móc, thiết bị, phụ tùng máy">
                             <h3>Bán buôn máy móc, thiết bị, phụ tùng máy</h3>
@@ -209,39 +243,49 @@
         </section>
 
         <!-- Form -->
-
         <section class="consultation">
             <div class="container">
-                <!-- Section Header -->
-                <div class="consultation-header">
-                    <img src="images/Consultant.png" alt="tư vấn với Lani&Dani">
-                    <h2>Bạn đang cần tư vấn?</h2>
-                    <p>Đừng ngần ngại, hãy liên hệ ngay với LaniDani để được tư vấn hoàn toàn miễn phí và báo giá tốt
-                        nhất
-                        dành
-                        riêng cho bạn.</p>
-                </div>
+                <div class="row">
+                    <!-- Section Header -->
+                    <div class="consultation-header col">
+                        <img src="images/Consultant.png" alt="tư vấn với Lani&Dani">
+                        <h2>Bạn đang cần tư vấn?</h2>
+                        <p>Đừng ngần ngại, hãy liên hệ ngay với LaniDani để được tư vấn hoàn toàn miễn phí và báo giá
+                            tốt
+                            nhất
+                            dành
+                            riêng cho bạn.</p>
+                    </div>
 
-                <!-- Section Form -->
-                <div class="consultation-form">
-                    <form action="" method="POST">
-                        <div class="form-group">
-                            <input type="text" name="fullname" placeholder="Tên của bạn" required>
-                        </div>
+                    <!-- Section Form -->
+                    <div class="consultation-form col">
+                        <form action="" method="POST">
 
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Email của bạn">
-                        </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="formGroupExampleInput"
+                                    placeholder="Tên của bạn">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="formGroupExampleInput2"
+                                    placeholder="Email của bạn">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="formGroupExampleInput2"
+                                    placeholder="Số điện thoại">
+                            </div>
 
-                        <div class="form-group">
-                            <input type="tel" name="phone" placeholder="Số điện thoại" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" rows="4" placeholder="Nội dung"></textarea>
-                        </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Nội dung" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                            </div>
 
-                        <button type="submit">GỬI</button>
-                    </form>
+                            <div class="form-input mb-3">
+                                <textarea name="message" rows="4" placeholder="Nội dung"></textarea>
+                            </div>
+
+                            <button type="submit">GỬI</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -357,6 +401,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
 

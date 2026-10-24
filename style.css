@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+section {
+    margin-bottom: 5%;
+}
+
+/* =============== Header ============== */
+.hero-section {
+    margin-bottom: 5%;
+}
+
+.top-header {
+    display: flex;
+}
+
+.nav ul {
+    display: flex;
+}
+
+
+/* =============== Main ============== */
+
+/* -----------Introduction----------- */
+/* .intro-imges .item-1 {
+    padding-top: 5%;
+}
+
+.intro-imges .item-2 {
+    padding-bottom: 5%;
+} */
+
+/* -----------Service----------- */
+.section-header {
+    text-align: center;
+}
+
+.divider {
+    border: 2px solid green;
+    width: 5%;
+    margin: auto;
+}
+
+.service-card {
+    text-align: center;
+}
+
+/* -----------Other Service----------- */
+.consultation {
+    background-image: url(images/background-consultant.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.consultation-form{
+    background-color: white;
+}
+/* =============== Footer ============== */
