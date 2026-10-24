@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Service Management - Lani & Dani</title>
+</head>
+
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="logo-box">
+                <a href=""><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">Golf Service Management</a></li>
+                    <li><a href="">Other Service Management</a></li>
+                    <li><a href="">News Management</a></li>
+                    <li><a href="">User Management</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-wrapper">
+            <header>
+                <div class="profile">
+                    <a href=""><span class="avatar">A</span></a>
+                    <span>Admin name</span>
+                </div>
+            </header>
+
+            <main>
+                <div class="container">
+                    <div class="page-header">
+                        <h1>Golf Service Management</h1>
+                        <nav class="breadcrumbs">
+                            <a href="">Home</a> / <span>Golf Service Management</span>
+                        </nav>
+                    </div>
+
+                    <section class="card">
+                        <div class="card-header">
+                            <h2>Add Golf Service</h2>
+                        </div>
+
+                        <div class="card-body">
+                            <form action="" method="POST" enctype="multipart/form-data">
+                                <div class="row">
+                                    <div class="service-name">
+                                        <label for="serviceName">Service name</label>
+                                        <input type="text" name="serviceName" id="serviceName">
+                                    </div>
+
+                                    <div class="thumbnail">
+                                        <label for="thumbnail">Thumbnail</label>
+                                        <input type="file" name="thumbnail" id="thumbnail">
+                                    </div>
+
+                                    <div class="description">
+                                        <label for="description">Description</label>
+                                        <textarea name="description" id="description" rows="4"></textarea>
+                                    </div>
+
+                                    <div class="check-box">
+                                        <input type="checkbox" name="isDraft" id="isDraft">
+                                        <label for="isDraft">Is draft</label>
+                                    </div>
+                                </div>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </section>
+
+                    <section class="card filter">
+                        <div class="card-body">
+                            <form action="" method="get">
+                                <label for="filterName">Filter by name</label>
+                                <input type="text" name="filterName" id="filterName" placeholder="Service name">
+                                <button type="submit">Filter</button>
+                            </form>
+                        </div>
+                    </section>
+
+                    <section class="card list-card">
+                        <div class="card-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Order No.</th>
+                                        <th>Thumbnail</th>
+                                        <th>Service Name</th>
+                                        <th>Description</th>
+                                        <th>Handle</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><img src="images/service-lawn-care.jpg" alt=""></td>
+                                        <td>Lawn Care</td>
+                                        <td>Professional lawn care for golf courses.</td>
+                                        <td><a href="">Edit</a>
+                                            <a href="">Delete</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2</td>
+                                        <td><img src="images/service-maintenance.jpg" alt=""></td>
+                                        <td>Maintenance</td>
+                                        <td>Regular course and equipment maintenance.</td>
+                                        <td><a href="">Edit</a>
+                                            <a href="">Delete</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>3</td>
+                                        <td><img src="images/service-training.jpg" alt=""></td>
+                                        <td>Training</td>
+                                        <td>Staff training and golf coaching programs.</td>
+                                        <td><a href="">Edit</a>
+                                            <a href="">Delete</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <nav class="pagination">
+                                <ul>
+                                    <li><a href="">Previous</a></li>
+                                    <li><a href="">1</a></li>
+                                    <li><a href="">2</a></li>
+                                    <li><a href="">3</a></li>
+                                    <li><a href="">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

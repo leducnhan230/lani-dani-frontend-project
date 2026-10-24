@@ -1,0 +1,9 @@
+# Bỏ qua tất cả các file ảnh ở thư mục gốc (các file thiết kế mẫu)
+*.png
+
+# Ngoại lệ: Vẫn giữ lại thư mục images/ và các file bên trong nó để dùng cho web
+!images/
+
+# Bỏ qua các file rác của hệ điều hành
+.DS_Store
+Thumbs.db
