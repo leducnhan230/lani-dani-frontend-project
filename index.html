@@ -17,23 +17,25 @@
     <!-- 1. Header & Banner -->
     <header class="hero-section">
         <div class="top-header">
-            <div class="logo-box">
-                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-            </div>
+            <div class="row">
+                <div class="logo-box col-4">
+                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
 
-            <div class="nav">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">TRANG CHỦ</a></li>
-                        <li><a href="#">DỊCH VỤ GOLF</a></li>
-                        <li><a href="#">DỊCH VỤ KHÁC</a></li>
-                        <li><a href="#">TIN TỨC</a></li>
-                        <li><a href="#">CÔNG TRÌNH</a></li>
-                        <li><a href="#">GIỚI THIỆU</a></li>
-                        <li><a href="#">LIÊN HỆ</a></li>
-                        <li><a href="#">TIẾNG VIỆT</a></li>
-                    </ul>
-                </nav>
+                <div class="nav col-8">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">TRANG CHỦ</a></li>
+                            <li><a href="#">DỊCH VỤ GOLF</a></li>
+                            <li><a href="#">DỊCH VỤ KHÁC</a></li>
+                            <li><a href="#">TIN TỨC</a></li>
+                            <li><a href="#">CÔNG TRÌNH</a></li>
+                            <li><a href="#">GIỚI THIỆU</a></li>
+                            <li><a href="#">LIÊN HỆ</a></li>
+                            <li><a href="#">TIẾNG VIỆT</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
 
@@ -71,23 +73,28 @@
             <div class="container">
                 <div class="row">
                     <div class="description col">
-                        <p class="subtitle">Chúng tôi là ai?</p>
-                        <h1>Công ty LANI & DANI</h1>
-                        <p> <b>Tự hào là công ty đầu tiên tại Việt Nam Cung cấp dịch vụ trọn gói</b>
-                            trong lĩnh vực tư vấn, thiết kế, xây dựng sân Golf, cung ứng nguồn lực, dịch vụ huấn luyện,
-                            quản lý
-                            và
-                            hậu cần cho dịch vụ Golf.</p>
-                        <p>Chúng tôi còn hoạt động trong lĩnh vực xây lắp và đầu tư xây dựng các công trình dân dụng,
-                            nhà
-                            xưởng công
-                            nghiệp, công trình hạ tầng kỹ thuật, đường giao thông, cầu cảng, bờ kè,cầu cống, nạo vét
-                            sông
-                            rạch,
-                            xây
-                            dựng các công trình thủy lợi, thi công san lấp mặt bằng, sản xuất và kinh doanh vật liệu xây
-                            dựng
-                        </p>
+                        <div class="text">
+                            <p class="subtitle">Chúng tôi là ai?</p>
+                            <h1>Công ty LANI & DANI</h1>
+                            <p> <b>Tự hào là công ty đầu tiên tại Việt Nam Cung cấp dịch vụ trọn gói</b>
+                                trong lĩnh vực tư vấn, thiết kế, xây dựng sân Golf, cung ứng nguồn lực, dịch vụ huấn
+                                luyện,
+                                quản lý
+                                và
+                                hậu cần cho dịch vụ Golf.</p>
+                            <p>Chúng tôi còn hoạt động trong lĩnh vực xây lắp và đầu tư xây dựng các công trình dân
+                                dụng,
+                                nhà
+                                xưởng công
+                                nghiệp, công trình hạ tầng kỹ thuật, đường giao thông, cầu cảng, bờ kè,cầu cống, nạo vét
+                                sông
+                                rạch,
+                                xây
+                                dựng các công trình thủy lợi, thi công san lấp mặt bằng, sản xuất và kinh doanh vật liệu
+                                xây
+                                dựng
+                            </p>
+                        </div>
                     </div>
                     <div class="intro-images col">
                         <div class="row">
@@ -109,7 +116,7 @@
             <div class="container">
                 <!-- Section Header -->
                 <div class="section-header">
-                    <span>Chuyên gia hàng đầu</span>
+                    <p class="subtitle">Chuyên gia hàng đầu</p>
                     <h2>Dịch Vụ Sân Golf</h2>
                     <div class="divider"></div>
                     <p>Với đội ngũ thiết kế và xây dựng chuyên nghiệp. <b>Lani &
@@ -176,7 +183,7 @@
             <div class="container">
                 <!-- Section Header -->
                 <div class="section-header">
-                    <span>Uy tín và Chuyên nghiệp</span>
+                    <p class="subtitle">Uy tín và Chuyên nghiệp</p>
                     <h2>Các Dịch Vụ Khác</h2>
                     <div class="divider"></div>
                     <p>Với định hướng phát triển đa ngành nghề, ngoài lĩnh vực sân Golf, Công ty TNHH TNHH
@@ -275,12 +282,9 @@
                             </div>
 
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Nội dung" id="floatingTextarea2"
-                                    style="height: 100px"></textarea>
-                            </div>
-
-                            <div class="form-input mb-3">
-                                <textarea name="message" rows="4" placeholder="Nội dung"></textarea>
+                                <textarea class="form-control" placeholder="Leave a comment here"
+                                    id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea">Comments</label>
                             </div>
 
                             <button type="submit">GỬI</button>
@@ -298,67 +302,85 @@
                 <div class="section-header">
                     <span>Cập nhật hằng ngày</span>
                     <h2>Tin Tức - Hoạt Động</h2>
+                    <div class="divider"></div>
                 </div>
 
                 <!-- Section Body Left -->
                 <div class="news-wrapper">
-                    <div class="section-content-left">
-                        <div class="left-content">
-                            <article>
-                                <a href=""><img src="images/news-1.jpg" alt="Cách chọn giày golf cho nam"></a>
-                                <span>GIẢI ĐẤU GOLF</span>
-                                <h3><a href="">Những lưu ý quan trọng trong cách chọn giày golf cho nam</a></h3>
-                                <p class="date">Tháng Mười 28, 2022</p>
-                                <p>Theo chân các golfer nam ra sân đó chính là đôi giày. Làm thế nào để có đôi giày mang
-                                    êm
-                                    chân
-                                    trong
-                                    suốt 4-5 giờ và tạo ra sự [...]</p>
-                                <a href=""><span>CHI TIẾT</span></a>
-                            </article>
+                    <div class="row">
+                        <div class="section-content-left col-9  ">
+                            <div class="row">
+                                <div class="left-content col">
+                                    <article>
+                                        <a href=""><img src="images/news-1.jpg" alt="Cách chọn giày golf cho nam"></a>
+                                        <div class="tag">
+                                            <p>GIẢI ĐẤU GOLF</p>
+                                        </div>
+                                        <h3><a href="">Những lưu ý quan trọng trong cách chọn giày golf cho nam</a></h3>
+                                        <p class="date">Tháng Mười 28, 2022</p>
+                                        <p>Theo chân các golfer nam ra sân đó chính là đôi giày. Làm thế nào để có đôi
+                                            giày
+                                            mang
+                                            êm
+                                            chân
+                                            trong
+                                            suốt 4-5 giờ và tạo ra sự [...]</p>
+                                        <a href=""><span>CHI TIẾT</span></a>
+                                    </article>
+                                </div>
+
+                                <div class="right-content col">
+                                    <article>
+                                        <a href=""><img src="images/news-2.jpg" alt="Kính chơi golf bảo vệ mắt tốt"></a>
+                                        <div class="tag">
+                                            <p>KỸ THUẬT GOLF</p>
+                                        </div>
+                                        <h3><a href="">Cách chọn kính chơi golf để bảo vệ mắt tốt nhất</a></h3>
+                                        <p class="date">Tháng Mười 28, 2022</p>
+                                        <p>Bên cạnh những chiết mũ golf, kính chơi golf là phụ kiện không thể thiếu cho
+                                            các
+                                            golfer
+                                            trong
+                                            những ngày nắng nóng, nhiệt lượng cao [...]]</p>
+                                        <a href=""><span>CHI TIẾT</span></a>
+                                    </article>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="right-content">
-                            <article>
-                                <a href=""><img src="images/news-2.jpg" alt="Kính chơi golf bảo vệ mắt tốt"></a>
-                                <span>KỸ THUẬT GOLF</span>
-                                <h3><a href="">Cách chọn kính chơi golf để bảo vệ mắt tốt nhất</a></h3>
-                                <p class="date">Tháng Mười 28, 2022</p>
-                                <p>Bên cạnh những chiết mũ golf, kính chơi golf là phụ kiện không thể thiếu cho các
-                                    golfer
-                                    trong
-                                    những ngày nắng nóng, nhiệt lượng cao [...]]</p>
-                                <a href=""><span>CHI TIẾT</span></a>
-                            </article>
-                        </div>
+                        <aside class="section-content-right col">
+                            <div class="news-card">
+                                <article>
+                                    <a href=""><img src="images/news-3.jpg" alt="Golf Course"></a>
+                                    <div class="tag">
+                                        <p>TƯ VẤN GOLF</p>
+                                    </div>
+                                    <h3><a href="">Golf Course là gì? Có bao nhiêu loại Golf Course</a></h3>
+                                </article>
+                            </div>
+
+                            <div class="news-card">
+                                <article>
+                                    <a href=""><img src="images/news-4.jpg" alt="cắm tee golf đơn giản"></a>
+                                    <div class="tag">
+                                        <p>GIẢI ĐẤU GOLF</p>
+                                    </div>
+                                    <h3><a href="">Cách cắm tee golf đơn giản giúp golfer đánh bóng hiệu quả nhất</a>
+                                    </h3>
+                                </article>
+                            </div>
+
+                            <div class="news-card">
+                                <article>
+                                    <a href=""><img src="images/news-5.jpg" alt="Điểm Hole in One trong golf"></a>
+                                    <div class="tag">
+                                        <p>KỸ THUẬT GOLF</p>
+                                    </div>
+                                    <h3><a href="">Điểm Hole in One trong golf nghĩa là gì?</a></h3>
+                                </article>
+                            </div>
+                        </aside>
                     </div>
-
-                    <aside class="section-content-right">
-                        <div class="news-card">
-                            <article>
-                                <a href=""><img src="images/news-3.jpg" alt="Golf Course"></a>
-                                <span>TƯ VẤN GOLF</span>
-                                <h3><a href="">Golf Course là gì? Có bao nhiêu loại Golf Course</a></h3>
-                            </article>
-                        </div>
-
-                        <div class="news-card">
-                            <article>
-                                <a href=""><img src="images/news-4.jpg" alt="cắm tee golf đơn giản"></a>
-                                <span>GIẢI ĐẤU GOLF</span>
-                                <h3><a href="">Cách cắm tee golf đơn giản giúp golfer đánh bóng hiệu quả nhất</a>
-                                </h3>
-                            </article>
-                        </div>
-
-                        <div class="news-card">
-                            <article>
-                                <a href=""><img src="images/news-5.jpg" alt="Điểm Hole in One trong golf"></a>
-                                <span>KỸ THUẬT GOLF</span>
-                                <h3><a href="">Điểm Hole in One trong golf nghĩa là gì?</a></h3>
-                            </article>
-                        </div>
-                    </aside>
                 </div>
             </div>
         </section>
@@ -367,29 +389,33 @@
     <footer>
         <div class="container">
             <div class="top-footer">
-                <div class="about-us">
-                    <img src="images/logo.png" alt="">
-                    <p>Lani & Dani là công ty hoạt động đa ngành, đa lĩnh vực, với chủ lực là thiết kế đầu tư sân
-                        golf,
-                        quy hoạch cụm dân cư, khu đô thị, khu đô thị mới hoàn chỉnh.</p>
-                </div>
+                <div class="row">
+                    <div class="about-us col">
+                        <img src="images/logo.png" class="mb-5" alt="">
+                        <p>Lani & Dani là công ty hoạt động đa ngành, đa lĩnh vực, với chủ lực là thiết kế đầu tư sân
+                            golf,
+                            quy hoạch cụm dân cư, khu đô thị, khu đô thị mới hoàn chỉnh.</p>
+                    </div>
 
-                <div class="contact-info">
-                    <h2>LIÊN HỆ</h2>
-                    <p><b>Địa chỉ</b> <br>202 Nguyễn Văn Hưởng, P. Thảo Điền, TP. Thủ Đức, TP. HCM</p>
-                    <p><b>Điện thoại</b><br>0989 368 880</p>
-                    <p><b>Email</b><br>info@lanidani.com</p>
-                </div>
+                    <div class="contact-info col">
+                        <h2>LIÊN HỆ</h2>
+                        <div class="divider"></div>
+                        <p><b>Địa chỉ</b> <br>202 Nguyễn Văn Hưởng, P. Thảo Điền, TP. Thủ Đức, TP. HCM</p>
+                        <p><b>Điện thoại</b><br>0989 368 880</p>
+                        <p><b>Email</b><br>info@lanidani.com</p>
+                    </div>
 
-                <div class="news">
-                    <h2>TIN TỨC</h2>
-                    <nav>
-                        <ul>
-                            <li><a href="">Kỹ thuật Golf</a></li>
-                            <li><a href="">Giải đấu Golf</a></li>
-                            <li><a href="">Tư vấn Golf</a></li>
-                        </ul>
-                    </nav>
+                    <div class="news col">
+                        <h2>TIN TỨC</h2>
+                        <div class="divider"></div>
+                        <nav>
+                            <ul>
+                                <li><a href="">Kỹ thuật Golf</a></li>
+                                <li><a href="">Giải đấu Golf</a></li>
+                                <li><a href="">Tư vấn Golf</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
 
