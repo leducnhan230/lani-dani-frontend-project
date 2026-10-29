@@ -216,6 +216,10 @@ padding-top: 1%;
     background-size: cover;
 }
 
+.consultation .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .consultation-form {
     background-color: white;
 }
