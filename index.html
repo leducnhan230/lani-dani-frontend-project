@@ -22,53 +22,96 @@
 
 <body>
     <!-- 1. Header & Banner -->
-    <header class="hero-section">
-        <div class="top-header">
+
+    <header>
+        <div class="logo-menu">
+        <div class="container">
             <div class="row">
-                <div class="logo-box col-4">
+<div class="col-md-3">
+                <div class="logo">
                     <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+</div>
                 </div>
 
-                <div class="nav col-8">
-                    <nav>
+                <div class="col-md-9">
+                    <nav class="navbar">
                         <ul>
-                            <li><a href="index.html">TRANG CHỦ</a></li>
-                            <li><a href="#">DỊCH VỤ GOLF</a></li>
+                            <li class="active"><a href="index.html">TRANG CHỦ</a></li>
+                            <li><a href="service.html">DỊCH VỤ GOLF</a></li>
                             <li><a href="#">DỊCH VỤ KHÁC</a></li>
-                            <li><a href="#">TIN TỨC</a></li>
-                            <li><a href="#">CÔNG TRÌNH</a></li>
+                            
+                                <li class="dropdown">
+                                    <a href="">TIN TỨC
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                        <!-- <i class="fa fa-chevron-down" aria-hidden="true"></i> -->
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">TIN TỨC 1</a></li>
+                            <li><a href="#">TIN TỨC 2</a></li>
+                                        <li><a href="#">TIN TỨC 3</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown">
+<a href="#">CÔNG TRÌNH
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                        <!-- <i class="fa fa-chevron-down" aria-hidden="true"></i> -->
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="">CÔNG TRÌNH 1</a></li>
+                                        <li><a href="">CÔNG TRÌNH 2</a></li>
+                                        <li><a href="">CÔNG TRÌNH 3</a></li>
+                                    </ul>
+</li>
                             <li><a href="#">GIỚI THIỆU</a></li>
                             <li><a href="#">LIÊN HỆ</a></li>
-                            <li><a href="#">TIẾNG VIỆT</a></li>
+
+                            <li class="dropdown">
+<a href="#">TIẾNG VIỆT
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                        <!-- <i class="fa fa-chevron-down" aria-hidden="true"></i>  -->
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href=""></a></li>
+                                    </ul>
+                                </li>
                         </ul>
                     </nav>
+</div>
                 </div>
             </div>
         </div>
 
+<div class="container-fluid p-0">
         <div class="slider">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/slider-1.jpg" class="d-block w-100" alt="...">
+                        <img src="images/slider-1.jpg" class="d-block w-100" alt="slider 1">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/slider-2.jpg" class="d-block w-100" alt="...">
+                        <img src="images/slider-2.jpg" class="d-block w-100" alt="slider 2">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/slider-3.jpg" class="d-block w-100" alt="...">
+                        <img src="images/slider-3.jpg" class="d-block w-100" alt="slider 3">
+</div>
                     </div>
-                </div>
+                
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<div class="buttom">
                     <span class="visually-hidden">Previous</span>
+</div>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+<div class="buttom">
                     <span class="visually-hidden">Next</span>
+</div>
                 </button>
+</div>
             </div>
         </div>
     </header>
