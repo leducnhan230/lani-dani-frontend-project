@@ -44,7 +44,7 @@ header .logo {
     justify-content: center;
     align-items: center;
     margin: 5%;
-    }
+}
 
 header .logo a {
     width: 80%;
@@ -56,7 +56,7 @@ header .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-padding: 0;
+    padding: 0;
 }
 
 
@@ -73,7 +73,7 @@ header ul {
 header ul li {
     height: 100%;
     display: flex;
-justify-content: center;
+    justify-content: center;
     align-items: center;
     white-space: nowrap;
     font-weight: bold;
@@ -141,7 +141,7 @@ header a {
 .golf-service .subtitle {
     font-weight: bold;
     color: #0E683A;
-padding-top: 1%;
+    padding-top: 1%;
 }
 
 .golf-service .divider {
@@ -152,7 +152,7 @@ padding-top: 1%;
 
 .golf-service .service-card {
     text-align: center;
-        margin-bottom: 4%;
+    margin-bottom: 4%;
 }
 
 .golf-service .service-card article {
@@ -187,9 +187,9 @@ padding-top: 1%;
 }
 
 .other-service article {
-        height: 100%;
+    height: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
+}
 
 
 
