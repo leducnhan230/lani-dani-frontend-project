@@ -127,14 +127,21 @@ header a {
     background-size: cover;
 }
 
+.golf-service .overlay {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 .section-header {
     text-align: center;
     margin-bottom: 5%;
 }
 
+
+
 .golf-service .subtitle {
     font-weight: bold;
     color: #0E683A;
+padding-top: 1%;
 }
 
 .golf-service .divider {
@@ -145,9 +152,23 @@ header a {
 
 .golf-service .service-card {
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 4%;
+        margin-bottom: 4%;
 }
+
+.golf-service .service-card article {
+    background-color: rgba(255, 255, 255, 0.9);
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.golf-service .service-card article img {
+    margin-bottom: 3%;
+}
+
+.golf-service .service-card p {
+    padding: 0 2% 5%;
+}
+
 
 /* -----------Other Service----------- */
 .other-service .subtitle {
