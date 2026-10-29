@@ -257,7 +257,7 @@ hr {
     color: #FCFFF7;
 }
 
-footer h2 {
+footer .row h2 {
     color: #FCFFF7;
 }
 
@@ -271,4 +271,13 @@ footer .divider {
     margin-left: 0;
     margin-right: auto;
     margin: 5% 0;
+}
+
+footer .icons {
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 1%;
 }
