@@ -182,14 +182,30 @@ padding-top: 1%;
     margin: 1% auto;
 }
 
-.other-service article {
-    max-width: 100%;
-    height: 80%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10%;
+.other-service .service-card {
+    padding: 1%;
 }
 
+.other-service article {
+        height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
+
+
+.other-service .img {
+    margin: auto;
+    height: 50%;
+    width: 50%;
+}
+
+.other-service title {
+    width: 90%;
+}
+
+.other-service h3 {
+    text-align: center;
+}
 
 /* -----------Consultation----------- */
 
