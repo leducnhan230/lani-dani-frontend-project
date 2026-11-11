@@ -132,22 +132,51 @@ header .navbar>ul>li.active {
 /* =============== Main ============== */
 
 /* -----------Introduction----------- */
-.introduction .subtitle {
-    font-weight: bold;
-}
-
 .introduction .description {
     display: flex;
     align-items: center;
+    padding: 0;
+}
+
+.introduction .text {
+    padding-right: 20px;
+}
+
+.introduction .subtitle {
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .introduction h1 {
     color: #0E683A;
-    margin: 3% 0;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.introduction p {
+    line-height: 2;
+}
+
+.introduction p:last-child{
+    margin: 0;
+}
+
+.introduction span{
+    font-weight: bold;
+}
+
+.intro-images{
+    padding: 0;
 }
 
 .introduction .item-1 {
     margin-top: 10%;
+    padding: 0 20px;
+}
+
+.introduction .item-2{
+    padding-left: 20px;
+    padding-right: 0;
 }
 
 
