@@ -124,7 +124,7 @@ header .navbar>ul>li.active {
     display: block;
 }
 
-.banner{
+.banner {
     margin-top: -90px;
 }
 
@@ -162,6 +162,7 @@ header .navbar>ul>li.active {
 
 .golf-service .overlay {
     background-color: rgba(255, 255, 255, 0.8);
+    padding: 10%;
 }
 
 .section-header {
@@ -169,39 +170,43 @@ header .navbar>ul>li.active {
     margin-bottom: 5%;
 }
 
-
-
 .golf-service .subtitle {
     font-weight: bold;
     color: #0E683A;
-    padding-top: 1%;
+    margin-bottom: 10px;
 }
 
-.golf-service .divider {
-    border: 2px solid green;
-    width: 5%;
-    margin: 1% auto;
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    margin: 10px auto;
+
+    width: 60px;
+    height: 3px;
+    background-color: #0E683A;
+}
+
+.section-header span{
+    font-weight: bold;
 }
 
 .golf-service .service-card {
-    text-align: center;
-    margin-bottom: 4%;
-}
-
-.golf-service .service-card article {
     background-color: rgba(255, 255, 255, 0.9);
-
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 2px #ccc;
+    text-align: center;
+}
+.service-card .descrip{
+    padding: 10px;
 }
 
-.golf-service .service-card article img {
-    margin-bottom: 3%;
+.service-card h3 a{
+    color: #000;
 }
-
-.golf-service .service-card p {
-    padding: 0 2% 5%;
-}
-
 
 /* -----------Other Service----------- */
 .other-service .subtitle {
