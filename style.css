@@ -27,6 +27,11 @@ p {
     color: #333333;
 }
 
+h2,
+.subtitle {
+    font-weight: bold;
+}
+
 /* =============== Header ============== */
 .logo-menu {
     position: fixed;
@@ -128,6 +133,10 @@ header .navbar>ul>li.active {
     margin-top: -90px;
 }
 
+header {
+    margin-bottom: 8%;
+}
+
 
 /* =============== Main ============== */
 
@@ -143,7 +152,6 @@ header .navbar>ul>li.active {
 }
 
 .introduction .subtitle {
-    font-weight: bold;
     margin-bottom: 20px;
 }
 
@@ -157,15 +165,15 @@ header .navbar>ul>li.active {
     line-height: 2;
 }
 
-.introduction p:last-child{
+.introduction p:last-child {
     margin: 0;
 }
 
-.introduction span{
+.introduction span {
     font-weight: bold;
 }
 
-.intro-images{
+.intro-images {
     padding: 0;
 }
 
@@ -174,12 +182,10 @@ header .navbar>ul>li.active {
     padding: 0 20px;
 }
 
-.introduction .item-2{
+.introduction .item-2 {
     padding-left: 20px;
     padding-right: 0;
 }
-
-
 
 /* -----------Service----------- */
 .golf-service {
@@ -200,7 +206,6 @@ header .navbar>ul>li.active {
 }
 
 .golf-service .subtitle {
-    font-weight: bold;
     color: #0E683A;
     margin-bottom: 10px;
 }
@@ -208,6 +213,7 @@ header .navbar>ul>li.active {
 .section-title {
     text-align: center;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .section-title::after {
@@ -220,7 +226,7 @@ header .navbar>ul>li.active {
     background-color: #0E683A;
 }
 
-.section-header span{
+.section-header span {
     font-weight: bold;
 }
 
@@ -229,49 +235,75 @@ header .navbar>ul>li.active {
     box-shadow: 0 2px 2px #ccc;
     text-align: center;
 }
-.service-card .descrip{
+
+.service-card .descrip {
     padding: 10px;
 }
 
-.service-card h3 a{
+.service-card h3 a {
     color: #000;
 }
 
 /* -----------Other Service----------- */
 .other-service .subtitle {
     color: #0E683A;
-    font-weight: bold;
 }
 
-.other-service .divider {
-    border: 2px solid green;
-    width: 5%;
-    margin: 1% auto;
-}
+.other-service h2::after {
+    content: "";
+    display: block;
+    margin: 20px auto;
 
-.other-service .service-card {
-    padding: 1%;
+    width: 60px;
+    height: 3px;
+    background-color: #0E683A;
 }
 
 .other-service article {
+    box-shadow: 0 1px 2px #ccc;
+    width: 100%;
     height: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.other-service .card{
+    border: none;
+    margin-bottom: 30px;
 }
 
 
+.other-service .card .img {
+    display: block;
+    max-width: 30%;
+    max-height: 40%;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
 
-.other-service .img {
-    margin: auto;
-    height: 50%;
-    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
-.other-service title {
-    width: 90%;
+.other-service .card img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    margin-bottom: 10px;
 }
+
 
 .other-service h3 {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    font-size: 20px;
+    height: 60%;
+}
+
+.other-service .card h3 a{
+    color: #000;
 }
 
 /* -----------Consultation----------- */
