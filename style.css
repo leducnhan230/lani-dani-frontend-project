@@ -25,11 +25,18 @@ ul {
 
 p {
     color: #333333;
+    margin: 0;
+    padding: 0;
 }
 
-h2,
+h2 {
+    font-weight: bold;
+    color: #333333;
+}
+
 .subtitle {
     font-weight: bold;
+    color: #0E683A;
 }
 
 /* =============== Header ============== */
@@ -153,6 +160,7 @@ header {
 
 .introduction .subtitle {
     margin-bottom: 20px;
+    color: #000;
 }
 
 .introduction h1 {
@@ -206,7 +214,6 @@ header {
 }
 
 .golf-service .subtitle {
-    color: #0E683A;
     margin-bottom: 10px;
 }
 
@@ -245,9 +252,6 @@ header {
 }
 
 /* -----------Other Service----------- */
-.other-service .subtitle {
-    color: #0E683A;
-}
 
 .other-service h2::after {
     content: "";
@@ -267,7 +271,7 @@ header {
     padding: 20px;
 }
 
-.other-service .card{
+.other-service .card {
     border: none;
     margin-bottom: 30px;
 }
@@ -302,7 +306,7 @@ header {
     height: 60%;
 }
 
-.other-service .card h3 a{
+.other-service .card h3 a {
     color: #000;
 }
 
@@ -320,11 +324,11 @@ header {
     padding: 10%;
 }
 
-.consultation .header{
+.consultation .header {
     margin: 15%;
 }
 
-.consultation .consul-img{
+.consultation .consul-img {
     max-width: 20%;
     max-height: 20%;
 
@@ -333,17 +337,17 @@ header {
     margin: 0 auto;
 }
 
-.consultation .text{
+.consultation .text {
     width: 100%;
     height: 70%;
 }
 
-.consultation .text h2{
+.consultation .text h2 {
     color: #fff;
     margin: 20px;
 }
 
-.consultation .text p{
+.consultation .text p {
     color: #fff;
 }
 
@@ -356,7 +360,8 @@ header {
     box-shadow: 0 3px 10px #000;
 }
 
-.consultation input, textarea{
+.consultation input,
+textarea {
     width: 100%;
     margin-bottom: 10px;
     border-radius: 20px;
@@ -365,11 +370,11 @@ header {
     border: 1px solid #D2D2D2;
 }
 
-.consultation textarea{
+.consultation textarea {
     height: 130px;
 }
 
-.consultation button{
+.consultation button {
     width: 100%;
     background-color: #0E683A;
     border: none;
@@ -379,24 +384,117 @@ header {
 }
 
 /* -----------News----------- */
-.news h2 {
-    color: #333333;
+.news article {
+    position: relative;
+    height: 100%;
 }
 
 .news .section-header {
     text-align: left;
 }
 
-.news .divider {
-    margin-left: 0;
-    margin-right: auto;
-    margin-bottom: 5%;
+.news h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    margin: 10px 0;
+    background-color: #0E683A;
+
+}
+
+.news .main-new-img {
+    display: block;
+    margin-bottom: 10px;
 }
 
 .news .tag {
+    display: inline-block;
     color: #FCFFF7;
     background-color: #B7B7B7;
+    border-radius: 5px;
+    padding: 0 5px 3px 5px;
 }
+
+.tag>p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.news h3 a {
+    color: #000;
+    font-size: 22px;
+}
+
+.news .date {
+    font-size: 10px;
+}
+
+.news .date::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 10px 0;
+
+    background-color: #E4E4E4;
+}
+
+.news article>p {
+    margin-bottom: 10px;
+}
+
+.news .detail-buttom {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: inline-block;
+    border: 3px solid #0E683A;
+    padding: 5px 10px;
+    margin-top: auto;
+
+}
+
+.news .detail-buttom>span {
+    color: #0E683A;
+    font-weight: bold;
+}
+
+.news .secondary-component a{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.news .secondary-component img{
+    width: 100%;
+    height: 100%;
+}
+
+.news .secondary-component a{
+    font-size: 22px;
+}
+
+.news .secondary-component h3::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 10px 0;
+
+    background-color: #E4E4E4;
+}
+
+.news .secondary-component article{
+    margin-bottom: 40px;
+}
+
+.news .secondary-component article:last-child{
+    margin-bottom: 0;
+}
+
 
 /* =============== Footer ============== */
 footer {
